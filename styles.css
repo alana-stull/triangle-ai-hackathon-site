@@ -69,7 +69,7 @@ nav.links a.nav-link:hover::after,nav.links a.nav-link.current::after{transform:
 .hero-grid{position:relative;z-index:2;}
 .hero-copy{max-width:1000px;}
 .hero-eyebrow{font-family:var(--mono);font-size:13px;color:var(--blue-soft);letter-spacing:0.02em;margin-bottom:40px;}
-.hero h1{font-size:clamp(48px, 6.4vw, 72px);font-weight:700;color:#fff;}
+.hero h1{font-size:clamp(48px, 6.4vw, 72px);font-weight:700;color:#fff;margin-top:24px;}
 .hero h1 .accent{color:var(--blue-soft);}
 .hero-sub{font-size:20px;color:#c3c9d3;max-width:760px;margin-top:24px;line-height:1.55;}
 .hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;font-family:var(--mono);font-size:13.5px;color:#8f97a5;}
