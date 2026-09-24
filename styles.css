@@ -35,6 +35,7 @@ p{margin:0;}
 /* ---------- NAV ---------- */
 header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
+.wrap.nav{padding:0 16px;}
 .brand{display:flex;align-items:center;gap:12px;}
 .brand .mark{width:30px;height:30px;}
 .brand-text{font-family:var(--display);font-weight:700;font-size:16.5px;letter-spacing:0.01em;line-height:1.15;}
