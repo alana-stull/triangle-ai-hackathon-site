@@ -86,7 +86,7 @@ nav.links a.nav-link:hover::after,nav.links a.nav-link.current::after{transform:
 .stat:first-child{border-left:none;padding-left:0;}
 .stat .num{font-family:var(--display);font-size:38px;font-weight:700;color:var(--blue);}
 .stat .label{font-size:13.5px;color:#5c6472;margin-top:4px;}
-.about-line{max-width:640px;font-size:17px;color:#333c48;line-height:1.6;padding:8px 0 40px;}
+.about-line{max-width:640px;font-size:17px;color:#333c48;line-height:1.6;padding:40px 0 40px;}
 
 /* ---------- TEASER LINKS (home) ---------- */
 .teasers{background:#fff;padding:96px 0;}
