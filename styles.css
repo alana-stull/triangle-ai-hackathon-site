@@ -146,7 +146,7 @@ nav.links a.nav-link:hover::after,nav.links a.nav-link.current::after{transform:
 .faq-item.open .plus{transform:rotate(45deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
 .faq-item.open .faq-a{max-height:400px;}
-.faq-a-inner{padding:0 0 24px;color:#5c6472;font-size:14.5px;line-height:1.65;max-width:640px;}
+.faq-a-inner{padding:0 0 24px;color:#5c6472;font-size:14.5px;line-height:1.65;max-width:900px;}
 
 /* ---------- INDUSTRY TRACK ACCORDION (reuses .faq-list/.faq-item/.faq-q/.plus/.faq-a) ---------- */
 .track-acc-label{display:flex;align-items:center;gap:16px;}
