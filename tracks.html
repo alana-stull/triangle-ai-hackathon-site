@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracks | Triangle AI Hackathon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg id="defs" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="mark-icon" viewBox="0 0 300 300">
+    <polygon points="150,40 250,220 50,220" fill="#0a0e14"/>
+    <polygon points="150,40 150,150 80,220 50,220" fill="#00539b"/>
+    <polygon points="150,40 150,150 220,220 250,220" fill="#3e7cb1"/>
+    <polygon points="80,220 150,150 220,220" fill="#aab2bd"/>
+    <polygon points="150,40 250,220 50,220" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+      <span class="brand-text">TRIANGLE<span>AI HACKATHON</span></span>
+    </a>
+    <nav class="links">
+      <a class="nav-link" href="schedule.html">Schedule</a>
+      <a class="nav-link current" href="tracks.html">Tracks</a>
+      <a class="nav-link" href="faq.html">FAQ</a>
+      <a class="nav-link" href="code-of-conduct.html">Code of Conduct</a>
+      <a class="btn btn-primary" href="#" title="Qualtrics link goes here once live">Register</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap on-dark">
+    <span class="section-tag">Pick your lane</span>
+    <h1>Tracks</h1>
+    <p>Two technical tracks for teams who want to go deep on a hard problem. Four industry tracks for teams solving for a specific audience. Pick one when you register, you can always build across both.</p>
+  </div>
+</section>
+
+<section class="section tracks">
+  <div class="wrap">
+    <div class="track-group-label"><span class="n">Technical Tracks</span><span class="rule"></span></div>
+  </div>
+  <div class="wrap">
+    <div class="track-featured">
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="9" width="14" height="11" rx="2"/><circle cx="9.5" cy="14.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="14.5" cy="14.5" r="1.3" fill="currentColor" stroke="none"/><line x1="12" y1="9" x2="12" y2="5"/><circle cx="12" cy="3.5" r="1.3"/></svg></div><span class="track-kind">Technical Track</span><div class="track-name">Robotics</div></div>
+        <p class="track-desc">Build with sensors, actuators, and control systems. Anything that senses or moves in the physical world.</p>
+      </div>
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12C5.5 6.5 18.5 6.5 22 12C18.5 17.5 5.5 17.5 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div><span class="track-kind">Technical Track</span><div class="track-name">Computer Vision</div></div>
+        <p class="track-desc">Build with images, video, or camera input. Detection, tracking, generation, anything that reads the visual world.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="track-group-label"><span class="n">Industry Tracks</span><span class="rule"></span></div>
+  </div>
+  <div class="track-grid">
+    <div class="track-card industry">
+      <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5C6 16.3 3 12.3 3 8.5C3 5.8 5.1 4 7.5 4C9 4 10.5 4.8 12 6.5C13.5 4.8 15 4 16.5 4C18.9 4 21 5.8 21 8.5C21 12.3 18 16.3 12 20.5Z"/></svg></div><span class="track-kind industry">Industry Track</span><div class="track-name">Health &amp; Wellness</div></div>
+      <p class="track-desc">Mental health, physical fitness, or clinical tools. Build something that makes a person healthier.</p>
+    </div>
+    <div class="track-card industry">
+      <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5C6 4.7 9 4.7 12 6.5C15 4.7 18 4.7 21 6.5V18C18 16.2 15 16.2 12 18C9 16.2 6 16.2 3 18Z"/><line x1="12" y1="6.5" x2="12" y2="18"/></svg></div><span class="track-kind industry">Industry Track</span><div class="track-name">Social Impact &amp; Education</div></div>
+      <p class="track-desc">Change how people learn or how communities solve shared problems. Tutoring, accessibility, civic tools, all fair game.</p>
+    </div>
+    <div class="track-card industry">
+      <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="15"/><line x1="21" y1="20" x2="21" y2="4"/></svg></div><span class="track-kind industry">Industry Track</span><div class="track-name">Finance, Enterprise &amp; Tech</div></div>
+      <p class="track-desc">Tools that help a business run better. Ops, analytics, workflow automation, fintech.</p>
+    </div>
+    <div class="track-card industry">
+      <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5L16 12L10 15.5Z" fill="currentColor" stroke="none"/></svg></div><span class="track-kind industry">Industry Track</span><div class="track-name">Entertainment, Media &amp; Arts</div></div>
+      <p class="track-desc">Creative tools, new formats, anything that changes how people make or experience art.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="register">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Registration opens soon.</h2>
+      <p class="cta-note">New Qualtrics form goes live shortly. This button will point straight to it.</p>
+    </div>
+    <a href="#" class="btn btn-on-blue">Register to hack &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+        <p>A student-run AI hackathon for the Triangle. Built for anyone in the region who wants to ship something over a weekend.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Event</h4>
+          <a href="schedule.html">Schedule</a>
+          <a href="tracks.html">Tracks</a>
+          <a href="#">Register</a>
+        </div>
+        <div class="foot-col">
+          <h4>Info</h4>
+          <a href="faq.html">FAQ</a>
+          <a href="code-of-conduct.html">Code of conduct</a>
+        </div>
+        <div class="foot-col">
+          <h4>Schools</h4>
+          <a href="#">Duke</a>
+          <a href="#">UNC</a>
+          <a href="#">NC State</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Triangle AI Hackathon</span>
+      <span>Durham, North Carolina</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

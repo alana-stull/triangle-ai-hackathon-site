@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule | Triangle AI Hackathon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg id="defs" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="mark-icon" viewBox="0 0 300 300">
+    <polygon points="150,40 250,220 50,220" fill="#0a0e14"/>
+    <polygon points="150,40 150,150 80,220 50,220" fill="#00539b"/>
+    <polygon points="150,40 150,150 220,220 250,220" fill="#3e7cb1"/>
+    <polygon points="80,220 150,150 220,220" fill="#aab2bd"/>
+    <polygon points="150,40 250,220 50,220" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+      <span class="brand-text">TRIANGLE<span>AI HACKATHON</span></span>
+    </a>
+    <nav class="links">
+      <a class="nav-link current" href="schedule.html">Schedule</a>
+      <a class="nav-link" href="tracks.html">Tracks</a>
+      <a class="nav-link" href="faq.html">FAQ</a>
+      <a class="nav-link" href="code-of-conduct.html">Code of Conduct</a>
+      <a class="btn btn-primary" href="#" title="Qualtrics link goes here once live">Register</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap on-dark">
+    <span class="section-tag">Weekend at a glance</span>
+    <h1>Schedule</h1>
+    <p>Placeholder times below. Swap in the real run of show once it is locked. Click a day to jump to it.</p>
+  </div>
+</section>
+<span class="jagged on-ink"></span>
+
+<section class="section schedule">
+  <div class="wrap">
+    <div class="day-tabs">
+      <button class="day-tab active" data-day="fri">Friday</button>
+      <button class="day-tab" data-day="sat">Saturday</button>
+      <button class="day-tab" data-day="sun">Sunday</button>
+    </div>
+
+    <div class="day-panel active" id="day-fri">
+      <div class="timeline">
+        <div class="t-row"><div class="t-time">5:00 PM</div><div><div class="t-title">Check-in and team formation</div><div class="t-desc">Grab your badge, find a table, meet your team if you do not have one yet.</div></div></div>
+        <div class="t-row"><div class="t-time">6:00 PM</div><div><div class="t-title">Opening ceremony</div><div class="t-desc">Track briefings, sponsor intros, and the rules that actually matter.</div></div></div>
+        <div class="t-row"><div class="t-time">7:30 PM</div><div><div class="t-title">Hacking begins</div><div class="t-desc">Mentors on the floor all night if you need a second pair of eyes.</div></div></div>
+        <div class="t-row"><div class="t-time">11:00 PM</div><div><div class="t-title">Late night workshop</div><div class="t-desc">A short technical session for anyone stuck on tooling or APIs.</div></div></div>
+      </div>
+    </div>
+
+    <div class="day-panel" id="day-sat">
+      <div class="timeline">
+        <div class="t-row"><div class="t-time">9:00 AM</div><div><div class="t-title">Breakfast and morning check-in</div><div class="t-desc">Coffee, light breakfast, mentors back on the floor.</div></div></div>
+        <div class="t-row"><div class="t-time">11:00 AM</div><div><div class="t-title">Track workshop block</div><div class="t-desc">Deep dives for each track, run back to back so you can drop into the one you need.</div></div></div>
+        <div class="t-row"><div class="t-time">1:00 PM</div><div><div class="t-title">Lunch</div><div class="t-desc">Stay at your table, keep building.</div></div></div>
+        <div class="t-row"><div class="t-time">3:00 PM</div><div><div class="t-title">Mentor office hours</div><div class="t-desc">Sign up for a 15 minute slot with a mentor in your track.</div></div></div>
+        <div class="t-row"><div class="t-time">7:00 PM</div><div><div class="t-title">Dinner</div><div class="t-desc">Short break, then back to hacking.</div></div></div>
+        <div class="t-row"><div class="t-time">11:59 PM</div><div><div class="t-title">Hacking pauses for the night</div><div class="t-desc">Building space stays open for teams who want to keep going.</div></div></div>
+      </div>
+    </div>
+
+    <div class="day-panel" id="day-sun">
+      <div class="timeline">
+        <div class="t-row"><div class="t-time">9:00 AM</div><div><div class="t-title">Breakfast</div><div class="t-desc">Final stretch. Hacking continues.</div></div></div>
+        <div class="t-row"><div class="t-time">11:00 AM</div><div><div class="t-title">Hacking ends, submissions due</div><div class="t-desc">Lock your repo and upload your demo video.</div></div></div>
+        <div class="t-row"><div class="t-time">12:00 PM</div><div><div class="t-title">Judging</div><div class="t-desc">Judges rotate through tables by track.</div></div></div>
+        <div class="t-row"><div class="t-time">2:30 PM</div><div><div class="t-title">Closing ceremony</div><div class="t-desc">Top teams present to the full room.</div></div></div>
+        <div class="t-row"><div class="t-time">3:30 PM</div><div><div class="t-title">Event ends</div><div class="t-desc">Pack up, trade contacts, keep building if you want to.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="register">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Registration opens soon.</h2>
+      <p class="cta-note">New Qualtrics form goes live shortly. This button will point straight to it.</p>
+    </div>
+    <a href="#" class="btn btn-on-blue">Register to hack &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+        <p>A student-run AI hackathon for the Triangle. Built for anyone in the region who wants to ship something over a weekend.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Event</h4>
+          <a href="schedule.html">Schedule</a>
+          <a href="tracks.html">Tracks</a>
+          <a href="#">Register</a>
+        </div>
+        <div class="foot-col">
+          <h4>Info</h4>
+          <a href="faq.html">FAQ</a>
+          <a href="code-of-conduct.html">Code of conduct</a>
+        </div>
+        <div class="foot-col">
+          <h4>Schools</h4>
+          <a href="#">Duke</a>
+          <a href="#">UNC</a>
+          <a href="#">NC State</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Triangle AI Hackathon</span>
+      <span>Durham, North Carolina</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.day-tab').forEach(function(tab){
+  tab.addEventListener('click', function(){
+    document.querySelectorAll('.day-tab').forEach(function(t){t.classList.remove('active');});
+    document.querySelectorAll('.day-panel').forEach(function(p){p.classList.remove('active');});
+    tab.classList.add('active');
+    document.getElementById('day-' + tab.dataset.day).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
