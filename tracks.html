@@ -8,23 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="logo/logo-mark-tight.svg">
 </head>
 <body>
-<svg id="defs" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="mark-icon" viewBox="0 0 300 300">
-    <polygon points="150,40 250,220 50,220" fill="#0a0e14"/>
-    <polygon points="150,40 150,150 80,220 50,220" fill="#00539b"/>
-    <polygon points="150,40 150,150 220,220 250,220" fill="#3e7cb1"/>
-    <polygon points="80,220 150,150 220,220" fill="#aab2bd"/>
-    <polygon points="150,40 250,220 50,220" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
-  </symbol>
-</svg>
-
 <header>
   <div class="wrap nav">
     <a href="index.html" class="brand">
-      <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+      <img class="mark" src="logo/logo-mark-tight.svg" alt="">
       <span class="brand-text">TRIANGLE<span>AI HACKATHON</span></span>
     </a>
     <nav class="links">
@@ -81,46 +71,22 @@
     <div class="track-group-label"><span class="n">Industry Tracks</span><span class="rule"></span></div>
   </div>
   <div class="wrap">
-    <div class="faq-list track-accordion">
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="track-acc-label">
-            <span class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5C6 16.3 3 12.3 3 8.5C3 5.8 5.1 4 7.5 4C9 4 10.5 4.8 12 6.5C13.5 4.8 15 4 16.5 4C18.9 4 21 5.8 21 8.5C21 12.3 18 16.3 12 20.5Z"/></svg></span>
-            <span class="track-acc-name">Health &amp; Wellness</span>
-          </span>
-          <span class="plus">+</span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Mental health, physical fitness, or clinical tools. Build something that makes a person healthier.</div></div>
+    <div class="track-featured industry">
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5C6 16.3 3 12.3 3 8.5C3 5.8 5.1 4 7.5 4C9 4 10.5 4.8 12 6.5C13.5 4.8 15 4 16.5 4C18.9 4 21 5.8 21 8.5C21 12.3 18 16.3 12 20.5Z"/></svg></div><span class="track-kind">Industry Track</span><div class="track-name">Health &amp; Wellness</div></div>
+        <p class="track-desc">Mental health, physical fitness, or clinical tools. Build something that makes a person healthier.</p>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="track-acc-label">
-            <span class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5C6 4.7 9 4.7 12 6.5C15 4.7 18 4.7 21 6.5V18C18 16.2 15 16.2 12 18C9 16.2 6 16.2 3 18Z"/><line x1="12" y1="6.5" x2="12" y2="18"/></svg></span>
-            <span class="track-acc-name">Social Impact &amp; Education</span>
-          </span>
-          <span class="plus">+</span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Change how people learn or how communities solve shared problems. Tutoring, accessibility, civic tools, all fair game.</div></div>
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5C6 4.7 9 4.7 12 6.5C15 4.7 18 4.7 21 6.5V18C18 16.2 15 16.2 12 18C9 16.2 6 16.2 3 18Z"/><line x1="12" y1="6.5" x2="12" y2="18"/></svg></div><span class="track-kind">Industry Track</span><div class="track-name">Social Impact &amp; Education</div></div>
+        <p class="track-desc">Change how people learn or how communities solve shared problems. Tutoring, accessibility, civic tools, all fair game.</p>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="track-acc-label">
-            <span class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="15"/><line x1="21" y1="20" x2="21" y2="4"/></svg></span>
-            <span class="track-acc-name">Finance, Enterprise &amp; Tech</span>
-          </span>
-          <span class="plus">+</span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Tools that help a business run better. Ops, analytics, workflow automation, fintech.</div></div>
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="15"/><line x1="21" y1="20" x2="21" y2="4"/></svg></div><span class="track-kind">Industry Track</span><div class="track-name">Finance, Enterprise &amp; Tech</div></div>
+        <p class="track-desc">Tools that help a business run better. Ops, analytics, workflow automation, fintech.</p>
       </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="track-acc-label">
-            <span class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5L16 12L10 15.5Z" fill="currentColor" stroke="none"/></svg></span>
-            <span class="track-acc-name">Entertainment, Media &amp; Arts</span>
-          </span>
-          <span class="plus">+</span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Creative tools, new formats, anything that changes how people make or experience art.</div></div>
+      <div class="track-card">
+        <div><div class="track-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5L16 12L10 15.5Z" fill="currentColor" stroke="none"/></svg></div><span class="track-kind">Industry Track</span><div class="track-name">Entertainment, Media &amp; Arts</div></div>
+        <p class="track-desc">Creative tools, new formats, anything that changes how people make or experience art.</p>
       </div>
     </div>
   </div>
@@ -138,7 +104,7 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <span class="mark"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use href="#mark-icon" xlink:href="#mark-icon"/></svg></span>
+        <img class="mark" src="logo/logo-mark-tight.svg" alt="">
         <p>A student-run AI hackathon for the Triangle. Built for anyone in the region who wants to ship something over a weekend.</p>
       </div>
       <div class="foot-cols">
@@ -167,14 +133,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-document.querySelectorAll('.faq-q').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    btn.closest('.faq-item').classList.toggle('open');
-  });
-});
-</script>
 
 </body>
 </html>
