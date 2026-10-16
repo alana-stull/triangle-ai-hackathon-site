@@ -86,6 +86,18 @@ nav.links a.nav-link:hover::after,nav.links a.nav-link.current::after{transform:
 .stat .label{font-size:13.5px;color:#5c6472;margin-top:4px;}
 .about-line{max-width:760px;font-size:17px;color:#333c48;line-height:1.6;padding:40px 0 40px;}
 
+/* ---------- SPONSOR RIBBON (home) ---------- */
+.logo-ribbon{background:#fff;border-bottom:1px solid var(--line);overflow:hidden;padding:28px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+.ribbon-track{display:flex;width:max-content;animation:ribbon 42s linear infinite;}
+.logo-ribbon:hover .ribbon-track{animation-play-state:paused;}
+.ribbon-set{display:flex;align-items:center;gap:72px;padding-right:72px;}
+.ribbon-set a{display:flex;align-items:center;flex:none;height:52px;}
+.ribbon-set img{height:46px;width:auto;max-width:220px;object-fit:contain;}
+@keyframes ribbon{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){
+  .ribbon-track{animation:none;}
+}
+
 /* ---------- TEASER LINKS (home) ---------- */
 .teasers{background:#fff;padding:96px 0;}
 .teaser-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:52px;}
