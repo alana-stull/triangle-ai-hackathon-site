@@ -137,6 +137,29 @@ nav.links a.nav-link:hover::after,nav.links a.nav-link.current::after{transform:
 .track-name{font-family:var(--display);font-size:20px;font-weight:600;margin-top:14px;color:var(--ink);}
 .track-desc{color:#5c6472;font-size:13.5px;line-height:1.55;margin-top:10px;}
 
+/* ---------- PRIZES ---------- */
+.prizes{background:#fff;}
+.prize-grid{display:grid;gap:20px;}
+.prize-grid.places{grid-template-columns:repeat(3,1fr);margin-bottom:72px;}
+.prize-grid.tracks{grid-template-columns:repeat(2,1fr);}
+.prize-card{background:#fff;border:1px solid var(--line);padding:44px 38px;min-height:240px;display:flex;flex-direction:column;}
+.prize-card:hover{background:var(--paper);}
+.prize-place{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);}
+.prize-amount{font-family:var(--display);font-size:28px;font-weight:600;margin-top:16px;line-height:1.15;color:var(--ink);}
+.prize-detail{color:#5c6472;font-size:15px;line-height:1.55;margin-top:10px;}
+.prize-sponsor{color:#5c6472;font-size:14.5px;line-height:1.5;margin-top:14px;}
+.prize-card > .prize-sponsor:last-child{margin-top:auto;padding-top:28px;}
+.prize-also{margin-top:28px;padding-top:28px;border-top:1px solid var(--line);}
+.prize-sponsor a{color:var(--blue);font-weight:600;}
+.prize-sponsor a:hover{text-decoration:underline;}
+
+/* ---------- SPONSORS ---------- */
+.sponsors{background:#fff;}
+.sponsor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.sponsor-card{background:#fff;border:1px solid var(--line);min-height:180px;display:flex;align-items:center;justify-content:center;padding:36px 32px;}
+.sponsor-card:hover{background:var(--paper);}
+.sponsor-card img{width:100%;height:84px;object-fit:contain;}
+
 /* ---------- FAQ ---------- */
 .faq-list{border-top:1px solid var(--line);}
 .faq-item{border-bottom:1px solid var(--line);}
@@ -178,6 +201,7 @@ footer{background:var(--ink);color:#8f97a5;padding:64px 0 36px;}
   .stat:nth-child(3){border-left:none;padding-left:0;}
   .teaser-grid{grid-template-columns:1fr;}
   .track-featured{grid-template-columns:1fr;}
+  .prize-grid.places,.prize-grid.tracks,.sponsor-grid{grid-template-columns:1fr;}
   .t-row{grid-template-columns:1fr;gap:6px;}
   .foot-top{flex-direction:column;}
 }
