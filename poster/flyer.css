@@ -1,0 +1,192 @@
+@page { size: letter; margin: 0; }
+
+:root{
+  --ink:#0a0e14;
+  --blue:#00539b;
+  --blue-deep:#003561;
+  --blue-soft:#5f9fd4;
+  --paper:#f7f8fa;
+  --line:#dde1e8;
+  --display:'Space Grotesk', sans-serif;
+  --body:'Inter', sans-serif;
+  --mono:'IBM Plex Mono', monospace;
+}
+
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+html,body{margin:0;padding:0;}
+body{font-family:var(--body);color:var(--ink);background:#d5d8de;}
+img{display:block;max-width:100%;}
+p,h1,h2{margin:0;}
+
+.sheet{
+  width:8.5in;
+  height:11in;
+  margin:0 auto;
+  background:var(--paper);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+.hero{background:var(--ink);color:#fff;flex:none;}
+.hero-inner{padding:0.34in 0.46in 0.06in;}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:0.2in;}
+.brand{display:flex;align-items:center;gap:0.1in;}
+.brand img{width:0.42in;height:auto;}
+.brand-text{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:0.03em;
+  line-height:1.12;
+  text-transform:uppercase;
+  color:#fff;
+}
+.brand-text span{display:block;color:var(--blue-soft);}
+.eyebrow{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:11px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--blue-soft);
+  margin-top:0.26in;
+}
+.hero h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:46px;
+  line-height:0.96;
+  letter-spacing:-0.02em;
+  color:#fff;
+  margin-top:0.1in;
+  max-width:7.2in;
+}
+.hero h1 .accent{color:var(--blue-soft);}
+.sub{
+  max-width:6.5in;
+  margin-top:0.14in;
+  color:#c3c9d3;
+  font-size:13px;
+  line-height:1.45;
+}
+.jagged{display:block;width:100%;height:0.22in;margin-top:0.12in;}
+
+.facts{
+  flex:1 1 auto;
+  min-height:0;
+  display:grid;
+  grid-template-columns:1fr 3.15in;
+  gap:0.22in;
+  padding:0.08in 0.46in 0.14in;
+}
+.facts-copy{display:flex;flex-direction:column;justify-content:center;gap:0.16in;min-width:0;}
+.when-where{display:grid;grid-template-columns:1fr 1fr;gap:0.16in;}
+.kicker{
+  display:block;
+  font-family:var(--mono);
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:0.04in;
+}
+.when-where strong{
+  display:block;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:-0.02em;
+  line-height:1.05;
+}
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0.14in 0.18in;
+  margin-top:0.16in;
+  padding-top:0.14in;
+  border-top:1px solid var(--line);
+}
+.stat strong{
+  display:block;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:30px;
+  color:var(--blue);
+  line-height:1;
+  letter-spacing:-0.02em;
+}
+.stat span{
+  display:block;
+  margin-top:0.04in;
+  font-family:var(--mono);
+  font-size:8px;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:#5c6472;
+}
+.photo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 28%;
+}
+
+.tracks{padding-top:0.02in;}
+.track-row{display:flex;align-items:flex-start;gap:0.1in;margin-top:0.08in;}
+.track-label{width:0.68in;flex:none;font-weight:600;font-size:11px;padding-top:0.04in;}
+.pills{display:flex;flex-wrap:wrap;gap:0.06in;}
+.pill{
+  font-size:10.5px;
+  font-weight:600;
+  line-height:1;
+  padding:0.05in 0.1in;
+  border-radius:999px;
+  background:var(--blue);
+  color:#fff;
+}
+
+.sponsors{
+  flex:none;
+  padding:0.28in 0.4in;
+  border-top:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  gap:0.1in;
+}
+.logo-row{display:flex;justify-content:center;align-items:center;gap:0.14in;}
+.logo-row img{width:1.28in;height:0.36in;object-fit:contain;}
+
+.foot{
+  flex:none;
+  background:var(--ink);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.28in;
+  padding:0.2in 0.46in;
+}
+.foot h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:28px;
+  letter-spacing:-0.02em;
+}
+.foot p{margin-top:0.06in;color:#c3c9d3;font-size:12px;}
+.foot p span{color:var(--blue-soft);font-weight:600;}
+.qr{width:1.35in;height:1.35in;background:#fff;padding:0.05in;}
+
+@media screen{
+  body{padding:24px 0;}
+}
+@media screen and (max-width: 800px){
+  .sheet{width:100%;height:auto;}
+  .facts{grid-template-columns:1fr;}
+  .photo{height:2.6in;}
+  .hero h1{font-size:36px;}
+}
+@media print{
+  body{background:none;padding:0;}
+}
